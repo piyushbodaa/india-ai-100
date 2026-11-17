@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>100 Government Actions to Advance AI in India — Tax, Regulation, Trade, Energy, Data, Capital</title>
+<meta name="description" content="100 government-actionable bottlenecks and recommendations focused only on reducing taxes, removing regulations, removing import barriers, liberalising energy markets, data/licensing simplification, and capital/talent mobility."/>
+<style>
+:root{
+--ink:#101418; --muted:#4a545e; --line:#d8dde3; --bg:#f4f5f3; --card:#ffffff;
+--navy:#16324f; --saffron:#b55a1f; --green:#1d6b48; --teal:#0e6b6e; --paper:#fdfdfc;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Noto Sans",sans-serif;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.topbar{border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:20}
+.top-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:10px 0;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.02em;font-size:15px}
+.brand span{color:var(--saffron)}
+.nav{display:flex;gap:16px;font-size:13px;color:var(--muted)}
+.nav a{color:var(--navy);text-decoration:none;font-weight:600}
+.hero{padding:38px 0 22px;background:var(--paper);border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--saffron)}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:42px;line-height:1.08;margin:8px 0 10px;max-width:920px}
+.lede{font-size:17px;color:var(--muted);max-width:900px;margin:0}
+.scope{margin:14px 0 0;padding:0;list-style:none;display:flex;gap:8px;flex-wrap:wrap}
+.scope li{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 10px;font-size:12.5px;font-weight:600;color:var(--navy)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 0}
+.stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px}
+.stat b{display:block;font-size:26px;line-height:1}
+.stat small{color:var(--muted);font-weight:600;font-size:12px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:16px 0}
+.panel h2{font-family:Georgia,serif;margin:0 0 8px;font-size:24px}
+.panel h3{margin:0 0 8px;font-size:16px}
+.sub{color:var(--muted);font-size:14px;margin:0 0 10px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.pill small{opacity:.75;font-weight:600}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:8px 0}
+input[type="search"],select{border:1px solid var(--line);border-radius:8px;padding:9px 10px;font-size:14px;background:#fff;min-width:0}
+input[type="search"]{flex:1 1 280px}
+.count{font-size:13px;color:var(--muted);font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.chart{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.chart h3{margin:0 0 4px;font-size:15px}
+.chart p{margin:0 0 10px;color:var(--muted);font-size:13px}
+.src{font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:10px;padding-top:8px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink);padding:8px;cursor:pointer;user-select:none;background:#fff}
+td{border-bottom:1px solid var(--line);padding:10px 8px;vertical-align:top}
+tr:hover td{background:#f7f9fb}
+.id{font-weight:800;white-space:nowrap;color:var(--navy)}
+.theme{font-size:11px;font-weight:800;border:1px solid var(--line);border-radius:999px;padding:2px 7px;white-space:nowrap;color:var(--green)}
+.ev{color:var(--muted);font-size:12.5px}
+.mono{font-variant-numeric:tabular-nums}
+.footer{font-size:13px;color:var(--muted);background:var(--paper);border-top:1px solid var(--line);padding:26px 0 40px}
+.footer h2{font-family:Georgia,serif;color:var(--ink);font-size:24px}
+.footer ul{padding-left:20px}
+a{color:var(--navy)}
+@media(max-width:900px){.stats{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}h1{font-size:32px}}
+@media print{body{background:#fff}.topbar{position:static}.pill{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap top-inner">
+<div class="brand">India AI <span>·</span> 100 Government Actions</div>
+<nav class="nav"><a href="#table-panel">100 actions</a><a href="#charts">Charts</a><a href="#method">Methodology</a></nav>
+</div></div>
+
+<header class="hero"><div class="wrap">
+<p class="kicker">Static briefing · Government-actionable only · 2026 evidence</p>
+<h1>100 government actions to advance AI in India</h1>
+<p class="lede">One hundred bottlenecks, one hundred fixes — each one removes a tax, a rule, a licence, a duty, or a market block. No generic “invest more”. Every row names the bottleneck, the exact government action, the impact, and the fetched evidence.</p>
+<ul class="scope">
+<li>Reduce taxes</li><li>Remove regulations</li><li>Remove import barriers</li><li>Liberalise energy markets</li><li>Data / licensing simplification</li><li>Capital / talent mobility</li>
+</ul>
+<div class="stats">
+<div class="stat"><b>100</b><small>government actions, 10 per theme</small></div>
+<div class="stat"><b>10</b><small>thematic filters below</small></div>
+<div class="stat"><b>4</b><small>evidence charts (SVG)</small></div>
+<div class="stat"><b>6</b><small>allowed scopes only</small></div>
+</div>
+</div></header>
+
+<main class="wrap">
+
+<section class="panel" id="charts" aria-labelledby="ch">
+<h2 id="ch">Evidence charts — the price of the status quo</h2>
+<p class="sub">All bars use real figures from the fetched evidence in the table. Where an impact is inferred rather than quoted, the chart or row says <b>estimated</b>.</p>
+<div class="grid2">
+
+<div class="chart">
+<h3>1. Import duty gap — AI servers (% landed duty)</h3>
+<p>India stacks BCD + IGST. Singapore / UAE benchmark is ~0% on ITA hardware (estimated benchmark context).</p>
+<svg viewBox="0 0 520 220" width="100%" role="img" aria-label="Bar chart: India AI server duty 18 to 30 percent vs laptop 18 percent">
+<line x1="40" y1="10" x2="40" y2="180" stroke="#d8dde3"/><line x1="40" y1="180" x2="510" y2="180" stroke="#d8dde3"/>
+<rect x="60" y="150" width="100" height="30" fill="#16324f"/><text x="60" y="145" font-size="12" font-weight="700">India laptop 18%</text>
+<rect x="190" y="120" width="100" height="60" fill="#b55a1f"/><text x="190" y="115" font-size="12" font-weight="700">India AI server ~30%</text>
+<rect x="320" y="140" width="100" height="40" fill="#1d6b48"/><text x="320" y="135" font-size="12" font-weight="700">Enterprise GPU 20–28%</text>
+<rect x="440" y="170" width="60" height="10" fill="#0e6b6e"/><text x="430" y="165" font-size="11" fill="#4a545e">SG/UAE ~0%*</text>
+<text x="60" y="205" font-size="11" fill="#4a545e">BCD 10% + IGST 18% ≈ 30% (desktop) vs 0% + 18% ≈ 18% (laptop). *Benchmark estimated.</text>
+</svg>
+<p class="src">Source: TRA-T01, TAX-T02, REG-C05, DG-08, F01 — BizzBuzz 9 Feb 2026 (20–28%); SeaAir HS8471 (10%+18%≈30%). Fix: zero-rate BCD to ITA 0%.</p>
+</div>
+
+<div class="chart">
+<h3>2. Energy tariff — industrial vs open-access power (₹/kWh)</h3>
+<p>Grid industrial power carries cross-subsidy + CSS. Green open access (OA) undercuts it by 30–40%.</p>
+<svg viewBox="0 0 520 220" width="100%" role="img" aria-label="Bar chart: grid 6 to 8, open access 3.5 to 4.5, Maharashtra commercial 16.74">
+<line x1="40" y1="10" x2="40" y2="180" stroke="#d8dde3"/><line x1="40" y1="180" x2="510" y2="180" stroke="#d8dde3"/>
+<rect x="60" y="120" width="90" height="60" fill="#b55a1f"/><text x="60" y="115" font-size="12" font-weight="700">Grid 6–8</text>
+<rect x="180" y="145" width="90" height="35" fill="#1d6b48"/><text x="180" y="140" font-size="12" font-weight="700">Green OA 3.5–4.5</text>
+<rect x="300" y="95" width="90" height="85" fill="#16324f"/><text x="300" y="90" font-size="12" font-weight="700">Maha HT 10.88</text>
+<rect x="420" y="62" width="70" height="118" fill="#8a3324"/><text x="410" y="57" font-size="12" font-weight="700">Maha commercial 16.74</text>
+<text x="60" y="205" font-size="11" fill="#4a545e">Grid vs OA = 30–40% saving; HT vs commercial = +54%. CSS adds ₹1.37–2.11/kWh.</text>
+</svg>
+<p class="src">Source: REG-C09 (OptenPower grid Rs6–8 vs OA Rs3.5–4.5); F05 / ENERGY-E1, E2 (MERC HT Rs10.88, CSS Rs1.5–2.10); TRA-T07 (CSS MH Rs2.11 TN Rs1.99).</p>
+</div>
+
+<div class="chart">
+<h3>3. Tax burden — India vs Singapore benchmark (%)</h3>
+<p>Three like-for-like gaps. Direct-tax gap is 8.17 pp; dividend gap is 10 pp; cloud OIDAR gap is 9 pp.</p>
+<svg viewBox="0 0 520 220" width="100%" role="img" aria-label="Grouped bars corporate tax India 25.17 vs Singapore 17, dividend 20 vs 10, OIDAR 18 vs 9">
+<line x1="40" y1="10" x2="40" y2="180" stroke="#d8dde3"/><line x1="40" y1="180" x2="510" y2="180" stroke="#d8dde3"/>
+<rect x="60" y="100" width="55" height="80" fill="#16324f"/><text x="60" y="95" font-size="11" font-weight="700">IN 25.17</text>
+<rect x="125" y="126" width="55" height="54" fill="#1d6b48"/><text x="125" y="121" font-size="11" font-weight="700">SG 17</text>
+<rect x="230" y="117" width="55" height="63" fill="#16324f"/><text x="230" y="112" font-size="11" font-weight="700">IN div 20</text>
+<rect x="295" y="148" width="55" height="32" fill="#1d6b48"/><text x="295" y="143" font-size="11" font-weight="700">Treaty 10</text>
+<rect x="390" y="124" width="55" height="56" fill="#16324f"/><text x="390" y="119" font-size="11" font-weight="700">IN OIDAR 18</text>
+<rect x="455" y="152" width="45" height="28" fill="#1d6b48"/><text x="452" y="147" font-size="11" font-weight="700">SG 9</text>
+<text x="60" y="205" font-size="11" fill="#4a545e">Corporate 25.17% (22+10+4) vs 17% flat; dividend 20% vs 10% treaty; OIDAR 18% vs 9%.</text>
+</svg>
+<p class="src">Source: TAX-T08 (IndiaFilings 25.17%; IRAS 17% flat); CAP-04 (Sec 195 20% vs India-SG DTAA 10%); TRA-T04 (OIDAR 18% vs SG 9%).</p>
+</div>
+
+<div class="chart">
+<h3>4. Import & approval delay — months (log-ish view)</h3>
+<p>Certification and queue delays, not tariffs alone, stall AI hardware and campuses. “Estimated” only where no fetched number exists.</p>
+<svg viewBox="0 0 520 220" width="100%" role="img" aria-label="Bar chart: BIS 6 months, grid queue 24 and 36 months, patent 54 months">
+<line x1="40" y1="10" x2="40" y2="180" stroke="#d8dde3"/><line x1="40" y1="180" x2="510" y2="180" stroke="#d8dde3"/>
+<rect x="60" y="150" width="80" height="30" fill="#0e6b6e"/><text x="60" y="145" font-size="12" font-weight="700">BIS CRS ~6 mo</text>
+<rect x="170" y="95" width="120" height="85" fill="#16324f"/><text x="170" y="90" font-size="12" font-weight="700">Grid 220kV 24 mo</text>
+<rect x="320" y="60" width="140" height="120" fill="#b55a1f"/><text x="320" y="55" font-size="12" font-weight="700">Grid 400kV 36 mo</text>
+<rect x="410" y="18" width="60" height="162" fill="#8a3324"/><text x="405" y="14" font-size="11" font-weight="700">Patent 4.5 yr</text>
+<text x="60" y="205" font-size="11" fill="#4a545e">BIS avg 6 mo (BIS FAQ); CEA 24/36 mo (Nasscom 30 May 2026); patent 4.5 yr (RS Q695).</text>
+</svg>
+<p class="src">Source: TAL-T06 / REG-C04 (BIS ~6 mo); ENERGY-E6 (CEA 24 mo @220kV / 36 mo @400kV); RES-B01 (Rajya Sabha Q695: 4.5-yr disposal, 221,016 pending).</p>
+</div>
+
+</div>
+</section>
+
+<section class="panel" id="table-panel" aria-labelledby="tp">
+<h2 id="tp">The 100 actions</h2>
+<p class="sub">Filter by theme, search any cell, or sort. Click a column header to sort. Counts update live. IDs keep their source prefix — TAX, TRA, EN, REG, COM, DAT, TAL, RES, CAP, FED.</p>
+<div class="filters" id="filters" aria-label="Theme filters"></div>
+<div class="toolbar">
+<input type="search" id="q" placeholder="Search bottleneck, action, impact, evidence, ID…" aria-label="Search"/>
+<label>Sort <select id="sort"><option value="id">ID</option><option value="theme">Theme</option><option value="bottleneck">Bottleneck</option></select></label>
+<span class="count" id="count"></span>
+<button class="pill" id="reset">Reset</button>
+</div>
+<div style="overflow:auto">
+<table aria-label="100 government actions">
+<thead><tr>
+<th data-k="id">ID ↕</th><th data-k="bottleneck">Bottleneck ↕</th><th data-k="action">Government action ↕</th><th data-k="impact">Impact ↕</th><th data-k="evidence">Evidence ↕</th>
+</tr></thead>
+<tbody id="rows"></tbody>
+</table>
+</div>
+</section>
+
+<section class="panel" id="method" aria-labelledby="mh">
+<h2 id="mh">Methodology &amp; sources — read this first</h2>
+<p><b>Scope.</b> Only six levers: reduce taxes; remove regulations; remove import barriers; liberalise energy markets; data/licensing simplification; capital/talent mobility. Hardware, compute, data, research, capital and federal entries are kept only where the fix is one of those six. Generic “invest more” items were excluded.</p>
+<p><b>Method.</b> Compact evidence was built from <b>fetched page bodies</b> (not search snippets alone): PIB / DPIIT / BIS / RBI / IRDAI / CERT-In / MEITY / CBIC-transcript guides / MERC orders / CEA / NITI / law-firm guides reproducing the notification text. Each row cites the fetched source it relies on. Where the fetched text gives a rate, delay, or count, that number is used verbatim.</p>
+<p><b>What an “impact” means.</b> Quoted saving/delay/penalty figures are from evidence. Inferences the evidence does not state (for example, competitiveness effects or compliance-cost totals) are labelled <b>estimated</b> in that row and are treated as directional, not as measured results.</p>
+<p><b>Known limits (preserved verbatim).</b></p>
+<ul>
+<li>PIB (www.pib.gov.in) PressReleasePage fetches loop-redirected in the research runs; PIB text was therefore corroborated via the static PIB PDF host (static.pib.gov.in, 200 OK) and via fetched PIB-query PDFs (Sansad). Treat PIB row citations as corroborated-by-fetched-query, not as a live PIB page fetch.</li>
+<li>CBIC primary tariff site (www.cbic.gov.in / taxinformation.cbic.gov.in) failed TLS with “invalid peer certificate: UnknownIssuer” (environment proxy); icegate.gov.in duty-details reset. BCD/IGST on HS 8471 is therefore evidenced via fetched CHA/AUCorp/Eximpe guides reproducing the CBIC tariff, plus gst.gov.in homepage (200 OK). Row citations name the guide, not a CBIC primary.</li>
+<li>Singapore corporate-tax primary (IRAS, iras.gov.sg) returned 404 on the first path; resolved on /quick-links/tax-rates/corporate-income-tax-rates and /taxes/corporate-income-tax/… (200 OK): “flat rate of 17%”. The 17% comparator is primary-verified.</li>
+<li>Aadhaar Act Sec 29 text (PRS/India Code PDF) was fetched but not carried as a separate action; DAT-05 / DAT-01 subsume the sharing barrier it would have covered. No item was dropped for this reason.</li>
+<li>Overlap audit (critic prior result): cross-cluster overlaps (especially GPU-duty and CSS appearing under several themes) materially breach a strict distinct-scope assumption. Counts are 10 per cluster by design; overlaps are retained because each entry came from a separate fetched cluster — see Dashboard notes. No item was silently merged.</li>
+</ul>
+<p><b>Primary sources fetched (representative).</b> PIB PRIDs (2012375 IndiaAI Mission, 2035851 Budget 2024-25, 2289946 Fellowships, 2247714 Vigyan Dhara, 2246386 SEZ, 2221412 Finance/Budget 2026, 2190655 DPDP Rules, 2098364 Budget 2025-26); RBI DPSS.CO.OD No.2785 (6 Apr 2018) + FEMA NDI Rules / Master Directions; IRDAI Reg 3(9)/2025; CERT-In Directions 20(3)/2022 (28 Apr 2022); MEITY IT Rules FAQ G.S.R.120(E) (10 Feb 2026) + DPDP Rules G.S.R.846(E) (13 Nov 2025); BIS CRS / Scheme-II + MEITY consent; DGFT Policy Circular 08/2025-26 (HS 8471 Restricted); MERC HT/CSS orders; CEA grid timelines via Nasscom; DPIIT PPP-MII Order (19 Jul 2024); Rajya Sabha Q695 (patents, 5 Dec 2025) and Lok Sabha Q1928/Q1206/Q1668; CBIC-trackers via Eximpe/SeaAir/HsnLookup; AUCorp OIDAR; CommunicationsToday; BizzBuzz 9 Feb 2026; IRAS 17% primary. Full per-row evidence is in the table.</p>
+<p><b>How to use.</b> Pick a filter, apply one government-action card at a time, and re-check the cited notification before budgeting — tariff, GST and energy values change by notification.</p>
+</section>
+
+</main>
+<footer class="footer"><div class="wrap">
+<h2>Footer</h2>
+<p>Static, self-contained, no build step. Open <code>india-ai-100/index.html</code> from disk. Data: 100 rows, 10 themes, 4 SVG charts. See Methodology above for limits and for why CBIC/PIB primaries are corroborated rather than direct.</p>
+<p>Build note: evidence preserved from prior-result refs 3, 6, 10, 1, 2, 4, 7, 5, 9, 8, 11, 12. No item omitted; see unresolved in handoff for the PIB/CBIC fetch limits.</p>
+</div></footer>
+<script>
+const DATA=[
+{id:"TAX-T01",theme:"tax",bottleneck:"GST 18% on GPUs/servers (HSN 8471) raises AI compute capex.",action:"Reduce to 5% / zero-rate AI capital goods.",impact:"Cuts capex by ~13 pp on IGST (estimated from 18% rate).",evidence:"18% IGST on 8471 even at 0% BCD; HsnLookup/SeaAir fetched 2026."},
+{id:"TAX-T02",theme:"tax",bottleneck:"10% BCD (~30% effective) on desktops/servers vs 0% on laptops + BIS CRS blocks imports.",action:"Remove BCD to ITA 0%; simplify BIS for data-centre gear.",impact:"Removes ~10 pp BCD stack; faster DC hardware imports.",evidence:"SeaAir 8471: 0% laptop / 10% desktop, IGST 18% = ~30% + BIS CRS; CBIC tariff via guide."},
+{id:"TAX-T03",theme:"tax",bottleneck:"Blocked ITC u/s 17(5)(c)(d) on DC construction embeds tax.",action:"Remove block; allow ITC on civil/electrical/cooling.",impact:"Frees ITC on ~Rs60–70 cr/MW build (estimated via Nasscom, see FED-F03).",evidence:"FileMyGSTR fetched Oct 2026: only plant & machinery escapes the block."},
+{id:"TAX-T04",theme:"tax",bottleneck:"OIDAR 18% on foreign cloud/AI SaaS, no threshold, monthly GSTR-5A.",action:"Reduce/remove B2B cloud/AI GST; raise threshold.",impact:"Lower cloud cost and filing burden.",evidence:"AU Corp fetched: 18% IGST, REG-10 no threshold, GSTR-5A by 20th."},
+{id:"TAX-T05",theme:"tax",bottleneck:"Equalisation levy 6% ads / 2% e-com + SEP uncertainty is extra-territorial.",action:"Remove permanently; sunset SEP; give foreign-tax credit.",impact:"Ends digital-tax risk and double-tax exposure.",evidence:"PIB 2019 6% Ch.VIII; Skydo/Nucleus: 2% to 1 Aug 2024, 6% to 1 Apr 2025."},
+{id:"TAX-T06",theme:"tax",bottleneck:"Angel tax u/s 56(2)(viib) on premium above FMV chills funding.",action:"Remove/sunset from AY 2025–26; close s.92(2)(m) backdoor.",impact:"Unchills startup funding.",evidence:"PIB Budget 2024–25 PRID 2035851: abolished for all investors."},
+{id:"TAX-T07",theme:"tax",bottleneck:"Startup holiday u/s 80-IAC (3 of 10 yrs) needs separate IMB certificate.",action:"Simplify: auto-approve DPIIT; extend to 2030.",impact:"Faster access to the holiday (estimated).",evidence:"StartupIndia fetched: 100% for 3 of 10 yrs; separate IMB clearance needed."},
+{id:"TAX-T08",theme:"tax",bottleneck:"Effective corporate tax 25.17% vs Singapore 17% flat loses AI HQ.",action:"Reduce base/surcharge/cess to ~17%.",impact:"Makes India competitive for AI HQs (estimated).",evidence:"IndiaFilings 25.17% (22%+10%+4%) vs IRAS 17% flat fetched 2026."},
+{id:"TAX-T09",theme:"tax",bottleneck:"Dividend withholding 20% + cess to foreigners (Sec 195/393) traps profit.",action:"Reduce/remove on AI FDI repatriation.",impact:"Frees cash; aligns with 10% treaty rate (estimated).",evidence:"Figment 2026 Sec 393: 20% + surcharge + cess or treaty rate (fetched)."},
+{id:"TAX-T10",theme:"tax",bottleneck:"TDS u/s 194J 10% professional / 2% technical on cloud/AI services.",action:"Reduce/remove on cloud/tech; merge rates.",impact:"Cuts friction on AI purchases.",evidence:"TaxGuru chart 10%/2% Rs50k FY25–26; PIB Budget: 5% merged to 2%."},
+{id:"TRA-T01",theme:"trade",bottleneck:"10% BCD + 18% IGST on AI servers (HS 8471) stacks to ~30%.",action:"Remove BCD to 0% via ITA-1 extension.",impact:"Landed cost ~30% → ~18% (IGST only).",evidence:"SeaAir HS8471 fetched: 10% BCD+18% IGST=~30% desktop, 0%+18%=~18% laptop; BIS CRS mandatory."},
+{id:"TRA-T02",theme:"trade",bottleneck:"DGFT “restricted” licence + end-use cert per semiconductor shipment halts ATMP.",action:"De-restrict to free import with one-time registration.",impact:"Stops production-line interruptions (estimated).",evidence:"CommunicationsToday fetched: DGFT reclassified inputs “restricted”, licence per shipment, customs halted."},
+{id:"TRA-T03",theme:"trade",bottleneck:"BIS CRS/QCO mandatory pre-import certification delays electronics.",action:"Exempt AI servers; accept IEC/CE + 14-day deemed approval.",impact:"Removes 6–14-week CRS delay.",evidence:"bis.gov.in compulsory-registration fetched; SeaAir: CRS mandatory under IS 13252; 6–14 wk delay."},
+{id:"TRA-T04",theme:"trade",bottleneck:"18% IGST OIDAR on imported cloud/AI vs Singapore 9%.",action:"Cut OIDAR to 5% for AI compute/cloud.",impact:"Halves cloud-import tax.",evidence:"AUCorp OIDAR guide fetched: 18% IGST, GSTR-5A by 20th, no threshold; gst.gov.in fetched."},
+{id:"TRA-T05",theme:"trade",bottleneck:"10% TDS s.194J vs 194I/195 confusion on cloud; royalty recharacterisation.",action:"Clarify cloud ≠ royalty; cut TDS to 2% FTS.",impact:"Ends royalty/FTS ambiguity.",evidence:"msassociates.pro TDS guide fetched: s.194J 10% vs s.194I; incometax.gov.in fetched."},
+{id:"TRA-T06",theme:"trade",bottleneck:"Press Note 3 land-border prior approval deters AI/data-centre FDI.",action:"Remove for AI/data centres; keep 100% automatic.",impact:"Unlocks hyperscaler capital.",evidence:"Ahlawat DC guide fetched: 100% auto route except land-border needs prior approval; dpiit.gov.in fetched."},
+{id:"TRA-T07",theme:"trade",bottleneck:"CSS Rs1.37–2.11/kWh + Rs10.88 HT tariff blocks green OA.",action:"Remove CSS; enforce national GEOA 100 kW / 15-day deemed approval.",impact:"Saves ~Rs2/kWh on green power.",evidence:"FlexiCloud fetched: MERC Rs10.88/kWh, CSS MH Rs2.11 TN Rs1.99; powermin.gov.in fetched."},
+{id:"TRA-T08",theme:"trade",bottleneck:"State-by-state DC incentives fragment rollout (MP 3/5/7-yr duty exempt only).",action:"Enforce NITI national single-window + deemed approval.",impact:"Ends 12–24-month fragmentation delay (estimated).",evidence:"invest.mp.gov.in fetched + NITI Framework PDF: 3-yr 33 kV / 5-yr 132 kV / 7-yr 220 kV only."},
+{id:"TRA-T09",theme:"trade",bottleneck:"DPDP Act 2023 has no SME exemption; Rs250 cr penalty.",action:"Exempt/simplify for AI MSMEs; raise threshold.",impact:"Cuts Rs5–7L enterprise programme burden for startups (TCSA range).",evidence:"LawMinded + TCSA fetched: Rules 13 Nov 2025, full compliance 13 May 2027, Rs250 cr max, Rs5–7L cost."},
+{id:"TRA-T10",theme:"trade",bottleneck:"IT Rules 2026: 3-hour takedown + traceability for SSMI.",action:"Restore 36-hour window; remove first-originator traceability.",impact:"Removes prior-restraint risk for AI hosts.",evidence:"GrantThornton IT Rules fetched: MeitY 10 Feb 2026 amendment, 3-hr takedown vs 36 hr, Rule 4(1A) AI labelling."},
+{id:"EN-E01",theme:"energy",bottleneck:"Industrial tariff cross-subsidy > ACoS lifts AI power cost.",action:"Eliminate subsidy via budget transfers; cap at ACoS.",impact:"HT 113% → ~101% of ACoS (MERC path).",evidence:"MERC HT 113%→101% ACoS [MERC/IGI]; PIB Bill 5-yr exit [PIB]; duty 5–16% [Bijli Calc]."},
+{id:"EN-E02",theme:"energy",bottleneck:"CSS on green OA adds ~Rs1.5–2.1/kWh.",action:"Abolish CSS for manufacturing/DCs; retain wheeling only.",impact:"Saves Rs1.5–2.1/kWh.",evidence:"MERC standard CSS Rs1.5–2.10/kWh; waiver only for green H2 [PTNZ-MERC matrix]."},
+{id:"EN-E03",theme:"energy",bottleneck:"Additional surcharge for stranded costs penalises OA.",action:"Abolish AS; absorb fixed costs via fixed charges.",impact:"Removes Rs0.99–1.09/kWh levy.",evidence:"GERC AS Rs0.99/kWh Oct26–Mar27 stranded Rs162 cr [GERC order]; UERC Rs1.09/kWh [UERC]."},
+{id:"EN-E04",theme:"energy",bottleneck:"Banking charge + 30% monthly cap blocks solar shape matching.",action:"Remove banking charge; allow 12-month carry-forward.",impact:"Lets flat AI load use solar (estimated).",evidence:"GERC banking Rs1.50→Rs1.00/kWh Sep26–Mar27, 30% cap, 1-mo expiry [GERC 6th Amend]."},
+{id:"EN-E05",theme:"energy",bottleneck:"Captive 26%/51% equity-consumption trap deters group captive.",action:"Simplify to pure consumption test.",impact:"Unlocks group captive without equity lock.",evidence:"Sec 2(8) Rule 3(1)(a): ≥26% ownership + ≥51% captive draw [Elec Rules 2005, IndianKanoon]."},
+{id:"EN-E06",theme:"energy",bottleneck:"Grid connectivity queue 24/36 months for 100 MW+ AI campuses.",action:"Single-window 30-day deemed General Network Access for DCs.",impact:"24–36-mo queue → 30-day deemed (estimated).",evidence:"CEA 24 mo @220 kV / 36 mo @400 kV; Nasscom 1.6→35.7 GW by 2039; CERC GNA delay rules."},
+{id:"EN-E07",theme:"energy",bottleneck:"Time-of-Day 20% peak surcharge penalises flat AI load.",action:"Exempt hyperscale DCs from ToD or cap spread to 10%.",impact:"Removes 20% peak penalty.",evidence:"J&K 1 Sep 2026: 20% rebate solar 9–5, 20% surcharge peak 6–9am/5–10pm [JERC via Kashmir Post]."},
+{id:"EN-E08",theme:"energy",bottleneck:"State discom last-mile monopoly blocks supplier choice.",action:"Allow 2nd licensee to use incumbent network (multiple supply).",impact:"Ends monopoly; cites Rs3.4 lakh cr cumulative losses 2018–24.",evidence:"PRS: single-company monopoly; 3.4 lakh cr losses 2018–24 [PRS Brief 2025]; PIB Bill ends monopoly."},
+{id:"EN-E09",theme:"energy",bottleneck:"Import friction on GPU/servers: 18% IGST + DGFT Restricted + BIS CRS.",action:"Remove DGFT/BIS authorisation; zero-rate IGST via deemed-export/RTP.",impact:"Cuts import delay; supports Rs10,300 cr GPU pool.",evidence:"HS 8471.90.00 18% IGST, 0% BCD [CBIC/Eximpe 13 May 2026]; IndiaAI 34,381 GPUs Rs10,300 cr [PIB Factsheet]."},
+{id:"EN-E10",theme:"energy",bottleneck:"28-state OA + IT Rules 36-hr + DPDP 18-mo freeze fragments rollout.",action:"Single national GEOA + 12-month harmonised IT/DPDP.",impact:"12-month harmonised safe harbour.",evidence:"DPDP G.S.R.846(E) 13 Nov 25; MeitY 18→12 mo May27→Nov26 [Legal500]; IT Rules 25 Feb 21 [THC]."},
+{id:"REG-C01",theme:"regulatory",bottleneck:"DPDP Rules 2025 consent-manager + breach duties with Rs250 cr penalty.",action:"Simplify: deemed consent for low-risk AI use + graduated penalties by turnover.",impact:"Cuts rebuild mandate for startups/MSMEs.",evidence:"PIB 17 Nov 2025: Rules 14 Nov 2025, max Rs250 cr, 18-month phase-in, 6,915 inputs."},
+{id:"REG-C02",theme:"regulatory",bottleneck:"CERT-In 6-hour reporting + 180-day logs + 5-year subscriber retention.",action:"Simplify: 72-hour reporting + 30-day logs; delete 5-year retention.",impact:"Aligns with Singapore 72-hour benchmark.",evidence:"CERT-In Dir. 20(3)/2022 28 Apr 2022: 6-hr notice, 180-day rolling logs, 5-yr records (fetched)."},
+{id:"REG-C03",theme:"regulatory",bottleneck:"IT Rules 2021 + 2026 SGI labelling + 2–3-hour takedown.",action:"Simplify/remove: restore 36-hr/7-day windows; drop SGI metadata mandate.",impact:"Restores safe harbour; ends prior-restraint compliance.",evidence:"MeitY 10 Feb 2026: govt order 3 hr vs 36, intimate 2 hr vs 24, unlawful 7 d vs 15 d (Legal500 fetched)."},
+{id:"REG-C04",theme:"regulatory",bottleneck:"BIS CRS Scheme-II needs separate MeitY prior consent for electronics/AI.",action:"Remove duplicate consent: single BIS self-declaration for AI/chips.",impact:"Removes stall in CRS Scheme-II chain.",evidence:"BIS norm 120 d + Omega fetched: MeitY consent delay stalls CRS chain; Goyal Aug 2025 seeks AI exemption."},
+{id:"REG-C05",theme:"regulatory",bottleneck:"20–28% duty on enterprise GPU servers + BCD/IGST on AI chips.",action:"Remove import barrier: zero duty on GPU servers/AI accelerators.",impact:"Cuts ~14% setup cost (rationalisation).",evidence:"BizzBuzz 9 Feb 2026 fetched: GPU server duties 20–28% main barrier to AI hardware."},
+{id:"REG-C06",theme:"regulatory",bottleneck:"NSWS patchy state link; founders still file 40+ times.",action:"Force all states on NSWS + deemed approval after 15 days.",impact:"8.3L approvals; 47k compliances cut; fewer filings.",evidence:"PIB 10 Dec 2025: 8.3L approvals, 47k compliances cut; BusinessMax: 32 ministries, only 18 states fully linked."},
+{id:"REG-C07",theme:"regulatory",bottleneck:"Section 69A opaque app blocking under Rule 16 confidentiality.",action:"Remove opacity: publish orders, notice+hearing, sunset clause.",impact:"Ends silent whole-app blocks.",evidence:"CivilsDaily 17 Apr 2026 fetched: Sec 69A + Rule 16 strict confidentiality, no public order/reason."},
+{id:"REG-C08",theme:"regulatory",bottleneck:"RBI payments-only-in-India + SEBI/IRDAI/MeitY divergent localisation.",action:"Simplify: allow cross-border AI inference; single cross-sector standard.",impact:"Enables global GPU arbitrage (estimated).",evidence:"RBI FAQ DPSS.CO.OD 6 Apr 2018 fetched: entire payment data stored only in India."},
+{id:"REG-C09",theme:"regulatory",bottleneck:"Cross-subsidy surcharge makes grid Rs6–8/kWh vs Rs3.5–4.5 OA, state-varying CSS.",action:"Liberalise energy: scrap CSS for data centres; unified green OA.",impact:"30–40% saving; 30 GW cumulative OA.",evidence:"OptenPower 16 Apr 2026 fetched: grid Rs6–8 vs OA Rs3.5–4.5 (30–40% saving), 30 GW cumulative."},
+{id:"REG-C10",theme:"regulatory",bottleneck:"Copyright TDM needs individual licences + 18% GST on AI SaaS (OIDAR).",action:"Replace licensing with blanket licence; cut GST 18% to 5%.",impact:"Removes per-work negotiation burden.",evidence:"PIB 9 Dec 2025 DPIIT fetched: blanket licence + royalty on commercialisation; ManageEngine: SaaS/cloud stay 18%."},
+{id:"COM-C01",theme:"compute",bottleneck:"Customs 20–28% on GPU servers blocks imports.",action:"Remove BCD to ITA-zero; exempt IGST on AI hardware.",impact:"~14–15% capex cut vs Singapore/UAE.",evidence:"BizzBuzz 9 Feb 2026 fetched: duties 20–28%; IANS search corroborates."},
+{id:"COM-C02",theme:"compute",bottleneck:"GST blocked ITC u/s 17(5) embeds construction tax.",action:"Allow full ITC on DC plant/machinery; remove block.",impact:"Frees embedded cost on ~Rs60–70 cr/MW build (estimated via Nasscom).",evidence:"Sec 17(5) blocks ITC per CommunicationsToday (fetched)."},
+{id:"COM-C03",theme:"compute",bottleneck:"Cross-subsidy surcharge inflates green OA cost.",action:"Cap/remove CSS + additional surcharge for green OA.",impact:"Closes Rs3.5–4.5 → Rs5.5–7.5 landed gap.",evidence:"Gujarat additional Rs1.0/kWh +22% Q4’25 EnergyMap (fetched)."},
+{id:"COM-C04",theme:"compute",bottleneck:"30+ permissions, 18–36-month approvals fragmented.",action:"Single national window; DCEZ time-bound clearance (60-day deemed).",impact:"18–36 mo → 60-day deemed (estimated).",evidence:">30 permissions ComputerWeekly + CEEW 15 states (fetched)."},
+{id:"COM-C05",theme:"compute",bottleneck:"Electricity duty divergence: Haryana vs UP.",action:"Uniform national exemption; end state arbitrage.",impact:"Ends viability swing (Haryana 20 y vs UP 10 y).",evidence:"Haryana 100% 20 y vs UP 100% 10 y NASSCOM/UPLC (fetched)."},
+{id:"COM-C06",theme:"compute",bottleneck:"BIS CRS MeitY prior consent blocks imports.",action:"Remove dual consent; mutual recognition / deemed approval.",impact:"Removes 6–14-week gate.",evidence:"MeitY consent blocks BIS Omega QMS (fetched)."},
+{id:"COM-C07",theme:"compute",bottleneck:"IT Rules 3-hour takedown + SGI labelling risk.",action:"Remove 3-hour rule; restore Sec 79 safe harbour.",impact:"Restores notice-and-takedown.",evidence:"10 Feb 2026 amendments 2–3 hr takedown Legal500 (fetched)."},
+{id:"COM-C08",theme:"compute",bottleneck:"RBI + DPDP localisation forces India storage.",action:"Remove localisation; liberalise cross-border flow.",impact:"Allows mirroring/adequacy.",evidence:"RBI 6 Apr 2018 store only in India + SDF Rule 13 (fetched)."},
+{id:"COM-C09",theme:"compute",bottleneck:"TP 15% cost-plus safe harbour + APA burden.",action:"Expand safe harbour; remove APA; extend tax holiday.",impact:"Cuts TP litigation.",evidence:"Budget 2026 holiday till 2047 + 15% Legal500 (fetched)."},
+{id:"COM-C10",theme:"compute",bottleneck:"State banking fragmentation Rs0.5–1.5, caps.",action:"National banking protocol; cap charges.",impact:"Harmonises 28-state charges.",evidence:"GERC Rs1.0 floor 0.5 ceil 1.5 SolarQuarter (fetched)."},
+{id:"DAT-DG01",theme:"data",bottleneck:"RBI blanket payment localisation + 24-hour reimport blocks offshore AI.",action:"Remove only-in-India mandate; allow adequacy-based processing.",impact:"Unblocks offshore fraud/AI training pools.",evidence:"RBI 6 Apr 2018 stored only in India, overseas data back in 24 hrs (RBI+Medianama fetched)."},
+{id:"DAT-DG02",theme:"data",bottleneck:"DPDP Rule 13(4) SDF localisation on notified + traffic data.",action:"Remove 13(4) localisation; replace with DPIA + encryption standard.",impact:"Removes deemed-export overreach for GCCs.",evidence:"DPDP Rules 2025 R13(4), eff. 13 May 2027, data+traffic must not leave India (BarandBench fetched)."},
+{id:"DAT-DG03",theme:"data",bottleneck:"IRDAI policy/claims records in-India only blocks offshore reinsurance AI.",action:"Remove only restriction; allow approved offshore mirror with India escrow.",impact:"Unblocks offshore reinsurance/analytics.",evidence:"IRDAI Reg 3(9)/2025 R9,R17: policy/claims records held in India only (IRDAI+Legal500 fetched)."},
+{id:"DAT-DG04",theme:"data",bottleneck:"CERT-In 180-day in-India logs + 6-hour reporting taxes deemed-export AI.",action:"Remove in-India mandate; harmonise to 90-day global retention, 72-hour reporting.",impact:"Aligns with GDPR/Singapore.",evidence:"CERT-In Dir.20(3)/2022 28 Apr 2022: 180 d in India, 6 hrs from noticing (CERT-In+Cyethack fetched)."},
+{id:"DAT-DG05",theme:"data",bottleneck:"DPDP has no anonymisation standard; anonymised AI data still treated as personal.",action:"Remove DPDP cover for irreversible anonymised data; notify k-anonymity/DP safe harbour.",impact:"Lets teams share anonymised AI data (estimated).",evidence:"DPDP Sec 2(t) identifiability only; Act never uses anonymised, 2019 Bill definition dropped (Trayambic fetched)."},
+{id:"DAT-DG06",theme:"data",bottleneck:"NDSAP/NDAP public data locked; few datasets, login + no bulk/API.",action:"Remove case clearance; mandate open APIs/bulk for shareable data in 30 days.",impact:"Unblocks training data (~203 datasets cited).",evidence:"NDSAP Cabinet 9 Feb 2012; NDAP May 2022 ~203 datasets, login to download (CBGA+NDAP fetched)."},
+{id:"DAT-DG07",theme:"data",bottleneck:"KYC/PMLA 5–10-yr + Cos Act 8-yr vs DPDP erase-on-purpose over-retains AI pools.",action:"Simplify to single 3-year post-purpose cap; remove overlapping floors.",impact:"Cuts over-retention.",evidence:"RBI KYC 5-yr floor, PMLA 5-yr, Cos Act 8-yr vs DPDP 8(7) erasure (DComply citing RBI Master Dir fetched)."},
+{id:"DAT-DG08",theme:"data",bottleneck:"20–28% GPU server duties inflate AI compute cost vs Singapore/UAE.",action:"Remove BCD on AI accelerators/servers to 0% (ITA-aligned).",impact:"~14% setup-cost saving.",evidence:"GPU servers 20–28% duty; rationalisation cuts setup cost ~14% (BizzBuzz+NewKerala 8 Feb 2026 fetched)."},
+{id:"DAT-DG09",theme:"data",bottleneck:"CSS+AS Rs1.3–2.5/kWh on open-access green power kills DC economics.",action:"Remove CSS/AS for DCs/green OA; liberalise deemed-distribution licence.",impact:"Cuts 30–40% opex (estimated).",evidence:"CSS Rs0.20–2.50/kWh, AS Rs0.10–0.80; S=T-[C(1+L/100)+D] (Wattmatch+IndianKanoon fetched)."},
+{id:"DAT-DG10",theme:"data",bottleneck:"30+ permissions and 15 state data-centre policies fragment India into islands.",action:"Remove state approvals; single-window national clearance, Centre override.",impact:"Ends island effect.",evidence:">=15 states notified policies; 30+ permissions to single-window Draft Nat DC Policy 2025 (Greyboard fetched)."},
+{id:"TAL-T01",theme:"talent",bottleneck:"182-day residency cliff taxes global income on return.",action:"Reduce: extend RNOR 5 years + exempt foreign income.",impact:"Aids returnee AI talent (estimated).",evidence:"IncomeTax: “in India 182 days or more” + deemed resident if Indian income >Rs15L untaxed abroad."},
+{id:"TAL-T02",theme:"talent",bottleneck:"IndiaAI Fellowship 686 awarded vs 13,500 planned.",action:"Simplify-remove: single portal; merge schemes.",impact:"Closes 686 vs 13,500 gap.",evidence:"PIB 2289946: 686 fellowships in 178 institutions; Mission outlay 10,371 cr over 5 yrs."},
+{id:"TAL-T03",theme:"talent",bottleneck:"Fellowship duplication across MeitY–DST–DBT–ANRF.",action:"Remove fragmentation: one ANRF clearance.",impact:"Single fellowship window.",evidence:"PIB 2247714: Vigyan Dhara merged 3 DST schemes; ANRF erstwhile SERB runs parallel."},
+{id:"TAL-T04",theme:"talent",bottleneck:"4,889/18,951 faculty vacant blocks PhD supervision.",action:"Remove: scrap NET gate + allow adjunct for PhD.",impact:"Fills 4,889 vacancies.",evidence:"Lok Sabha Q1206 28.07.2025: 4,889 vacant of 18,951 sanctioned; 176 ad-hoc."},
+{id:"TAL-T05",theme:"talent",bottleneck:"HSN 8471 laptops/servers/GPUs Restricted licence.",action:"Remove: free import for AI hardware.",impact:"Ends per-shipment authorisation.",evidence:"DGFT Cir. 08/2025–26 for 2026: Restricted IT Hardware under HSN 8471 needs authorisation."},
+{id:"TAL-T06",theme:"talent",bottleneck:"BIS CRS 6-month licence delays GPU/lab imports.",action:"Simplify-remove: accept CE/UL, 30-day deemed approval.",impact:"6 months → 30 days.",evidence:"BIS FAQ: avg 6 months from complete application; CRS list under MeitY Order."},
+{id:"TAL-T07",theme:"talent",bottleneck:"Payment data only-in-India bans mirror for AI.",action:"Liberalise: allow mirror + ease ML training.",impact:"Enables cross-border training (estimated).",evidence:"RBI DPSS 6 Apr 2018: entire payment data stored only in India full end-to-end."},
+{id:"TAL-T08",theme:"talent",bottleneck:"3-hour takedown makes hosting AI unlawful content.",action:"Simplify: restore 72-hour + safe harbour.",impact:"Restores prior window (36 hr → 3 hr cited).",evidence:"MEITY FAQ G.S.R.120(E) 10 Feb 2026: timeline reduced from 36 hours to 3 hours."},
+{id:"TAL-T09",theme:"talent",bottleneck:"SEZ-to-DTA taxed as import blocks talent clusters.",action:"Remove: nil duty for SEZ–DTA AI sales.",impact:"Frees 368 SEZs.",evidence:"PIB 2246386: Sec 30 SEZ Act DTA as import; 368 SEZs; exports 11.70 lakh cr in 2025–26."},
+{id:"TAL-T10",theme:"talent",bottleneck:"Consent Manager Rs2 cr net-worth + penalties blocks startups.",action:"Simplify-reduce: exempt small; cap penalty.",impact:"Cuts startup burden.",evidence:"MEITY DPDP 2025 review: Rule 4 Rs2 cr too high; 6,951 comments analysed."},
+{id:"RES-B01",theme:"research",bottleneck:"Patent examination backlog 4.5-year disposal blocks AI IP filings.",action:"Remove pre-grant opposition delay; lift examiner cap; cut pendency to <12 mo.",impact:"4.5 years → <12 months.",evidence:"Filed 58k→110k FY21–25, examined 73k→15k, 221,016 pending, 4.5-yr disposal (Rajya Sabha Q695, 5 Dec 2025)."},
+{id:"RES-B02",theme:"research",bottleneck:"GeM PPP-MII bars foreign AI models via local-content preference.",action:"Remove 50%/20% local-content mandate for AI software/SaaS procurement.",impact:"Enables L1 award.",evidence:"Class-I ≥50%, Class-II ≥20% local content under GFR 153(iii) (DPIIT Order 19 Jul 2024)."},
+{id:"RES-B03",theme:"research",bottleneck:"BIS QCO mandatory ISI delays AI hardware/appliance imports.",action:"Remove compulsory ISI for AI deployment hardware; adopt mutual recognition.",impact:"Removes 85-product QCO gate.",evidence:"QCO 2025 for 85 products IS 302 Pt1:2024, deferred S.O.5038E 6 Nov 2025 (BIS/DPIIT)."},
+{id:"RES-B04",theme:"research",bottleneck:"No trade-secrets statute leaves model weights to contract only.",action:"Enact simplified Protection of Trade Secrets Act per Law Commission draft.",impact:"Criminal/civil remedies (estimated).",evidence:"Lok Sabha Q1928 (11 Mar 2025): 289th Report Mar 2024 with draft Bill, no Act yet."},
+{id:"RES-B05",theme:"research",bottleneck:"IndiaAI open-source mandate forces disclosure of funded models.",action:"Remove compulsory open-licence; allow dual proprietary option.",impact:"Retains private co-investment.",evidence:"Mission Rs10,371.92 cr 5-yr, 38k GPUs, July 2025 open-source confirmation (PIB 7 Mar 2024; Q1668)."},
+{id:"RES-B06",theme:"research",bottleneck:"DPDP consent + CERT-In 180-day in-India logs burden AI training.",action:"Simplify DPDP Sec 16 transfer; cut CERT-In retention to 90-day global.",impact:"Cuts duplicative storage.",evidence:"DPDP penalty Rs250 cr Sec 8(5), Rules 13 Nov 2025 (PIB 17 Nov 2025); CERT-In 28 Apr 2022 180-day log."},
+{id:"RES-B07",theme:"research",bottleneck:"BCD+IGST on AI accelerators inflates compute import cost.",action:"Remove BCD and SWS on HS8471/8542 GPUs/servers to zero.",impact:"Cuts ~30% effective duty.",evidence:"Budget 2025–26: IFPD 10%→20%, open cells 5% (PIB 1 Feb 2025); HS8471 IGST 18% (CBIC May 2026)."},
+{id:"RES-B08",theme:"research",bottleneck:"18% GST on cloud/GPU hosting under SAC 998315 taxes IndiaAI compute.",action:"Reduce GST to 5% or zero for empanelled GPU hosting.",impact:"18% → 5%/0%.",evidence:"SAC 998315 hosting/cloud 18% unchanged post GST 2.0 22 Sep 2025 (CBIC Notif. 15/2025)."},
+{id:"RES-B09",theme:"research",bottleneck:"Cross-subsidy lifts industrial power to Rs10.88/kWh vs Rs6.2 cost.",action:"Liberalise by removing cross-subsidy surcharge and banking charges for DCs.",impact:"Rs10.88 → toward Rs6.2.",evidence:"Maharashtra HT Rs10.88/kWh FY26–27 MERC 25 Mar 2026; AT&C 15.04% ACS–ARR Rs0.06 (Mint/Power Min)."},
+{id:"RES-B10",theme:"research",bottleneck:"15 state data-centre policies and 30+ approvals add 12–24 months.",action:"Remove fragmentation via single national one-window deemed approval.",impact:"12–24 mo → 30-day (estimated).",evidence:"30+ permissions to one-window (Computer Weekly 15 Aug 2025); 15 states no binding national policy (CEEW)."},
+{id:"CAP-01",theme:"capital",bottleneck:"FEMA pricing floor on equity issuance to non-residents.",action:"Remove Rule 21 floor; allow free pricing.",impact:"Unblocks secondaries/bridges (estimated).",evidence:"Rule 21 NDI requires issue ≥ FMV via merchant banker/CA; DPIIT paper requires valuation (RBI fetched)."},
+{id:"CAP-02",theme:"capital",bottleneck:"SAFE/KISS has no legal identity; convertible notes only DPIIT + Rs25L minimum.",action:"Recognise SAFE/KISS; allow <Rs25L notes.",impact:"Widens early funding.",evidence:"FEMA NDI only bridge is convertible note held by DPIIT startup, Rs25L min, convert/repay within 10 yrs (FEMA NDI Rules 2019, DPIIT site fetched)."},
+{id:"CAP-03",theme:"capital",bottleneck:"Venture debt ECB MAMP 3 yrs + 20% WHT vs 5% sunset 2023.",action:"Restore 5% TDS under Sec 194LC; shorten MAMP to 1 yr.",impact:"WHT 20% → 5%.",evidence:"ECB needs MAMP 3 yrs; Sec 194LC 5% expired 1 Jul 2023, now 20% under 115A (RBI Feb 2026 ECB amendment fetched)."},
+{id:"CAP-04",theme:"capital",bottleneck:"Dividend withholding 20% domestic vs 10% Singapore/US treaty.",action:"Cut domestic dividend TDS to 10% treaty-standard rate.",impact:"Halves repatriation tax.",evidence:"Sec 195 dividend 20% + cess 20.8% max 23.92% vs India–Sing DTAA 10%/15% (Finance Bill memo indiabudget.gov.in fetched)."},
+{id:"CAP-05",theme:"capital",bottleneck:"ESOP perquisite tax at exercise at slab 31.2% though illiquid.",action:"Tax ESOP only at sale; remove perquisite tax.",impact:"Ends illiquid cash tax.",evidence:"Sec 17(2)(vi) perquisite = FMV − exercise price taxed 30% + 4% cess = 31.2% (Finance Bill fetched)."},
+{id:"CAP-06",theme:"capital",bottleneck:"Angel tax 56(2)(viib) abolished only prospectively AY 2025–26.",action:"Delete retrospectively; bar pre-2024 scrutiny.",impact:"Ends legacy litigation.",evidence:"Finance (No.2) 2024 makes clause inapplicable from AY25–26 (1 Apr 2025), pre-2024 issuances remain assessable (indiabudget Finance Bill fetched)."},
+{id:"CAP-07",theme:"capital",bottleneck:"LTCG 12.5% no indexation 24-month lock-in vs Singapore 0%.",action:"Restore indexation or cut to 10%; 12-month holding.",impact:"Closes Singapore 0% gap.",evidence:"23 Jul 2024 LTCG 20% w/index → 12.5% no indexation, hold >24 mo (Finance Bill memo indiabudget.gov.in fetched)."},
+{id:"CAP-08",theme:"capital",bottleneck:"ODI 400% net worth + LRS $250k cap blocks flips.",action:"Raise ODI to 1000% net worth; LRS to $1m.",impact:"Unblocks flips/offshore infra (estimated).",evidence:"ODI financial commitment capped 400% net worth; resident LRS $250k p.a. (RBI Master Directions 2022 fetched)."},
+{id:"CAP-09",theme:"capital",bottleneck:"GPU import 18% IGST upfront + BIS 6–8-month dual certification.",action:"Duty-defer IGST; single-window BIS 30-day.",impact:"Frees ~Rs180 cr per Rs1,000 cr cluster.",evidence:"18% IGST on CIF blocks Rs180 cr per Rs1,000 cr cluster; BIS needs 2 certs compute+PSU 6–8 mo (BIS bis.gov.in fetched)."},
+{id:"CAP-10",theme:"capital",bottleneck:"Data-centre power CSS Rs1.37–2.11/kWh + OA delays.",action:"Cap CSS at Rs0.5; 15-day deemed OA approval.",impact:"Saves Rs1–2/kWh.",evidence:"CSS Maharashtra Rs2.11 TN Rs1.99 AP Rs1.37–1.71 per kWh; DISCOM OA delays on HT users (CEA cea.nic.in fetched)."},
+{id:"FED-F01",theme:"federal",bottleneck:"GPU import duties 20–28% on AI servers.",action:"Reduce BCD to 0% + exempt 18% IGST on HS 8471/8542 accelerators.",impact:"~14% cost cut.",evidence:"BizzBuzz 9 Feb 2026: duties 20–28%, rationalising cuts cost 14%; CarraGlobe: IGST 18% India."},
+{id:"FED-F02",theme:"federal",bottleneck:"BIS CRS mandatory for servers/customs block, 3–6-month delay.",action:"Remove BIS CRS for AI servers or mutual-recognise CE + 15-day fast-track.",impact:"3–6 months → 15 days.",evidence:"CarraGlobe fetched: CRS 3–6 mo min, no expedite; TaxGuru/CAClub fetched: CBIC Instr. 27/2025-Customs 26 Aug 2025 validates BIS at clearance."},
+{id:"FED-F03",theme:"federal",bottleneck:"GST ITC blocked on data-centre construction u/s 17(5).",action:"Remove Sec 17(5)(c)–(d) block for data centres; allow full 18% ITC.",impact:"Frees Rs60–70 cr/MW at stake.",evidence:"CommunicationsToday fetched: Sec 17(5) blocks ITC on works-contract/immovable construction, embedded as cost; Nasscom: Rs60–70 cr/MW at stake."},
+{id:"FED-F04",theme:"federal",bottleneck:"Electricity outside GST + state duty not ITC-able.",action:"Bring electricity under GST or exempt + allow duty ITC offset.",impact:"Allows offset vs cloud/colocation output (estimated).",evidence:"Nasscom fetched: electricity outside GST, state duties varying, cannot offset vs GST output on cloud/colocation."},
+{id:"FED-F05",theme:"federal",bottleneck:"Data centres billed commercial Rs16.74 vs industrial Rs10.88.",action:"Liberalise: mandate HT industrial tariff; remove commercial classification.",impact:"Saves Rs5.86/kWh (+54% gap).",evidence:"FlexiCloud/MERC fetched: MSEDCL HT-ind Rs10.88 vs commercial Rs16.74 +54%; MERC order 25 Mar 2026; SG S$0.235/kWh benchmark."},
+{id:"FED-F06",theme:"federal",bottleneck:"Green open-access CSS/banking kills procurement.",action:"Remove CSS+banking for renewable OA; enforce Green OA Rules 2022.",impact:"Closes AP 500–600 MW vs Telangana 16 MW gap (estimated).",evidence:"IndiaRENews fetched: Telangana +16 MW/2 yr vs AP 500–600 MW; cites high CSS/banking, delayed approvals, utility resistance."},
+{id:"FED-F07",theme:"federal",bottleneck:"15+ divergent state data-centre policies.",action:"Remove state variation: single national electricity-duty + stamp floor.",impact:"Harmonises MH 60% cap vs UP 100% (estimated).",evidence:"Nasscom fetched: one nation many laws, fragmented incentives; MH 60% cap vs UP 100% examples; NITI: harmonise."},
+{id:"FED-F08",theme:"federal",bottleneck:"Sequential multiple clearances, no single window.",action:"Remove duplicate clearances; legislate time-bound single-window + deemed approval.",impact:"30-day deemed.",evidence:"Deccan/NITI fetched 14 Oct 2026: NITI Frontier Tech Hub seeks aspirational single-window, framework is guidance not law; Nasscom: 2020 draft single-window still missing."},
+{id:"FED-F09",theme:"federal",bottleneck:"DPDP flat Rs250 cr penalty chills AI data use.",action:"Reduce/replace flat cap with turnover-proportional 4% global cap.",impact:"GDPR-aligned cap.",evidence:"AapTaxLaw fetched DPDP Schedule: Sec 8(5) up to Rs250 cr; Sec 8(6)/9 up to Rs200 cr; Rules GSR846(E) 13 Nov 2025, enforce May 2027."},
+{id:"FED-F10",theme:"federal",bottleneck:"Budget 2047 holiday foreign-global only via reseller.",action:"Remove reseller clause + extend 0% to domestic AI/cloud income.",impact:"Ends reseller toll.",evidence:"PIB Finance 2221412 fetched: holiday till 2047 only foreign-global via Indian reseller, 15% safe-harbour; domestic AI gets no benefit."}
+];
+const THEMES=[["all","All themes"],["tax","Tax & Customs (10)"],["trade","Trade, FDI & Import (10)"],["energy","Energy Markets (10)"],["regulatory","Regulatory Burden (10)"],["compute","Compute & Data Centres (10)"],["data","Data Governance (10)"],["talent","Talent & Mobility (10)"],["research","Research, IP & Procurement (10)"],["capital","Capital, FEMA & Exit (10)"],["federal","Federal Coordination (10)"]];
+let state={theme:"all",q:"",sort:"id",dir:1};
+const fBox=document.getElementById("filters");
+THEMES.forEach(([k,label])=>{
+const b=document.createElement("button");b.className="pill";b.textContent=label;b.setAttribute("aria-pressed",k==="all"?"true":"false");
+b.onclick=()=>{state.theme=k;fBox.querySelectorAll(".pill").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");render();};
+fBox.appendChild(b);});
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function render(){
+const q=state.q.trim().toLowerCase();
+let rows=DATA.filter(r=>(state.theme==="all"||r.theme===state.theme)&&(!q||[r.id,r.theme,r.bottleneck,r.action,r.impact,r.evidence].join(" ").toLowerCase().includes(q)));
+rows=rows.slice().sort((a,b)=>{
+const k=state.sort;let va=a[k],vb=b[k];
+if(k==="id"||k==="theme")return String(va).localeCompare(String(vb))*state.dir;
+return String(va).localeCompare(String(vb))*state.dir;});
+const tb=document.getElementById("rows");
+tb.innerHTML=rows.map(r=>`<tr><td class="id mono">${esc(r.id)}<br/><span class="theme">${esc(r.theme)}</span></td><td>${esc(r.bottleneck)}</td><td><b>${esc(r.action)}</b></td><td>${esc(r.impact)}</td><td class="ev">${esc(r.evidence)}</td></tr>`).join("")||`<tr><td colspan="5">No rows match. <button id="empty-reset" type="button">Clear search</button></td></tr>`;
+document.getElementById("count").textContent=`Showing ${rows.length} of ${DATA.length} actions`;
+const er=document.getElementById("empty-reset");if(er)er.onclick=()=>{state.q="";document.getElementById("q").value="";render();};}
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render();});
+document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
+document.getElementById("reset").addEventListener("click",()=>{state={theme:"all",q:"",sort:"id",dir:1};document.getElementById("q").value="";document.getElementById("sort").value="id";fBox.querySelectorAll(".pill").forEach((x,i)=>x.setAttribute("aria-pressed",i===0?"true":"false"));render();});
+document.querySelectorAll("th[data-k]").forEach(th=>{th.addEventListener("click",()=>{const k=th.dataset.k;if(state.sort===k)state.dir*=-1;else{state.sort=k;state.dir=1;document.getElementById("sort").value=["id","theme","bottleneck"].includes(k)?k:"id";}render();});});
+render();
+</script>
+</body>
+</html>
